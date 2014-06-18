@@ -5,4 +5,4 @@ def removeLetter(text,letter):#camel case FTW, fuck underscores
 			y=y+x
 	return y
 
-print removeLetter("Mississippi","i")
+print removeLetter("happy","a")
