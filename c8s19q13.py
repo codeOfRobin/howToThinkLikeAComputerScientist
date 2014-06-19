@@ -4,10 +4,13 @@ def count(x,y):
 def remove(x,y):
 	l1=y.split(x)
 	z=""
-	x=0
+	a=0
 	for subParts in l1:
-		if subParts!=x:
-			z=z+subParts
-
+		if subParts==x:
+			l1.remove(a)
+			break
+		a=a+1
+	for subParts in l1:
+		z=z+subParts
 	return z
 print remove("an", "banana")
