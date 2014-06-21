@@ -10,4 +10,8 @@ def remove(x,y):
 			z=z+subParts
 
 	return z
-print remove("an", "banana")
+
+def something((x,y)):
+	print x
+
+something((8,9))

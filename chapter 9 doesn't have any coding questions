@@ -1,0 +1,14 @@
+chapter 9 doesn't have any coding questions
+Q1:
+def something((x,y)):
+	print x
+
+something((8,9))
+seems to work fine
+
+Q2:
+tuple is a generalisation of a pair
+
+Q3:
+pair is a kind of a tuple
+
