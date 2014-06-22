@@ -42,7 +42,7 @@ red.left(90)
 red.forward(120)
 red.shape("circle")
 red.shapesize(2)
-red.color("black","darkgrey")
+red.color("red")
 
 
 yellow.forward(40)
@@ -50,24 +50,26 @@ yellow.left(90)
 yellow.forward(80)
 yellow.shape("circle")
 yellow.shapesize(2)
-yellow.color("black","darkgrey")
+yellow.color("yellow")
 
+red.hideturtle()
+yellow.hideturtle()
 
 
 stateNumber=0#FUCK UNDERSCORES, CAMEL CASE FTW
 def stateThingy():
 	global stateNumber
 	if stateNumber==0:
-		yellow.color("black","yellow")
-		tess.color("black","darkgrey")
+		yellow.showturtle()
+		tess.hideturtle()
 		stateNumber=1
 	elif stateNumber==1:
-		yellow.color("black","darkgrey")
-		red.color("black","red")
+		ye llow.hideturtle()
+		red.showturtle()
 		stateNumber=2
 	else:
-		red.color("black","darkgrey")
-		tess.color("black","green")
+		red.hideturtle()
+		tess.showturtle()
 		stateNumber=0
 		pass
 wn.onkey(stateThingy,"space")
