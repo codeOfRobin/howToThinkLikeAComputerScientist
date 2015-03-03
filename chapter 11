@@ -4,3 +4,5 @@ Q3 a=[1,2,3]
 	b=[5,2,3]
 Q4 in the first case, they point to different memory locations. in the second, they don't
 
+Q9 in this case, they;re the same. Try using ";" instead of " " as a separator and this will screw up.
+
